@@ -1,6 +1,3 @@
-Here is a TypeScript solution for the problem:
-
-```typescript
 class RainwaterTrap {
     calculateWater(arr: number[]): number {
         let n = arr.length;
@@ -22,10 +19,3 @@ class RainwaterTrap {
         return water;
     }
 }
-
-let rainwaterTrap = new RainwaterTrap();
-let arr = [3, 0, 2, 0, 4];
-console.log(rainwaterTrap.calculateWater(arr));
-```
-
-This TypeScript program calculates how much rainwater can be trapped between elevation bars. The `calculateWater` method takes an array of numbers as input, which represents the height of the bars. It then calculates the maximum height of the bar from the left and right side for every bar. The amount of water that can be stored in every bar is the minimum of maximum height of bars on both the sides minus its own height. This value is then added to the total amount of water stored. The result is then printed to the console.
