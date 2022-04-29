@@ -1,5 +1,9 @@
-function calculateRainwater(heights) {
-    let left = 0, right = heights.length - 1;
-    let maxLeft = 0, maxRight = 0;
-    let rainwater = 0;
-}
+while (left < right) {
+        if (heights[left] <= heights[right]) {
+            if (heights[left] >= maxLeft) {
+                maxLeft = heights[left];
+            } else {
+                rainwater += maxLeft - heights[left];
+            }
+            left++;
+        }
